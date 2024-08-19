@@ -1,0 +1,43 @@
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 50s linear infinite;
+}
+
+
+.paused{
+  animation-play-state: paused;
+}
+
+.section3backgroun{
+  background-size: 100% 100%;
+}
+
+@media (max-width:429px) {
+  .section3backgroun{
+    background-size:cover;
+  }
+}
+
+.CompanyList{
+  animation: 10s linear infinite MoveCompany;
+}
+
+
+@keyframes MoveCompany {
+  0% {
+    top: 0;
+  }
+  100% {
+   top: -100%;
+  }
+}
